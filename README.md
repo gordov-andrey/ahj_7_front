@@ -1,3 +1,3 @@
-#Front:
+#Front: https://github.com/gordov-andrey/ahj_7_front
 
-#Back:
+#Back: https://gordov-http.herokuapp.com
