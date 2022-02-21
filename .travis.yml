@@ -1,12 +1,8 @@
 language: node_js
 node_js:
   - "16"
-script:
+install:
   - npm install
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: main
+script:
+  - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
+  - npx push-dir --dir=dist --branch=gh-pages --force --verbose
