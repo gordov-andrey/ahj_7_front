@@ -85,7 +85,7 @@ function createRequestTicketDescription(mainContainer, currentTicket, serverUrl)
   xhrGetDescription.send();
 }
 
-export default function getEditTicketWidget(mainContainer, currentTicket, ticketEdit, serverUrl) {
+export default function editTicketWidget(mainContainer, currentTicket, ticketEdit, serverUrl) {
   if (mainContainer.querySelector('.modal')) return;
   const widgetEditTicketHtml = `
       <div data-widget="editTicket" class="modal widget-edit">

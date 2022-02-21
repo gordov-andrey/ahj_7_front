@@ -50,7 +50,7 @@ function addTicketSubmitHandler(mainContainer, serverUrl) {
   });
 }
 
-export default function getAddTicketWidget(mainContainer, serverUrl) {
+export default function addTicketWidget(mainContainer, serverUrl) {
   if (mainContainer.querySelector('.modal')) return;
   const widgetAddTicketHtml = `
       <div data-widget="addTicket" class="modal widget-add">
