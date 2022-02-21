@@ -5,7 +5,7 @@ import editTicketWidget from './methods/editTicketWidget';
 import changeTicketStatus from './methods/changeTicketStatus';
 import showTicketDescription from './methods/showTicketDescription';
 
-const serverUrl = 'https://gordov-andrey.herokuapp.com/';
+const serverUrl = 'https://gordov-http.herokuapp.com/';
 
 const mainContainer = document.querySelector('.container');
 const ticketsContainer = document.querySelector('.tickets-container');
