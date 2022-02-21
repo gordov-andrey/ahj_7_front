@@ -5,6 +5,10 @@ install:
   - npm install
 script:
   - npm run build
-after_success:
-  - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
-  - npx push-dir --dir=dist --branch=gh-pages --force --verbose
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    dir: dist
